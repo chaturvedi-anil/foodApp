@@ -1,0 +1,1 @@
+var searchBox=document.getElementById('searchBox');
