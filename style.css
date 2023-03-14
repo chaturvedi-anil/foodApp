@@ -166,7 +166,7 @@ body
     height: 90%;
     overflow-y: scroll;
     padding: 2rem 0;
-    /* display: none; */
+    display: none;
 }
 
 .meal-details::-webkit-scrollbar
@@ -186,6 +186,10 @@ body
 .meal-details-content
 {
     margin: 2rem;
+}
+.meal-details-content p:not(.recipe-category)
+{
+    padding: 1rem 0;
 }
 .recipe-close-btn
 {
@@ -219,6 +223,29 @@ body
 .recipe-instruction
 {
     padding: 1rem 0;
+}
+.recipe-meal-img img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.recipe-link
+{
+    margin: 1.4rem 0;
+}
+.recipe-link a
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.4s linear;
+}
+.recipe-link a:hover
+{
+    opacity: 0.8;
 }
 /* Media Queries */
 @media screen and (min-width: 600px){
