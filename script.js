@@ -8,6 +8,10 @@ const recipeCloseBtn = document.getElementById('recipe-close-btn');
 //event Listener
 searchBtn.addEventListener('click', getMealList);
 mealList.addEventListener('click', getMealRecipe);
+recipeCloseBtn.addEventListener('click', ()=>
+{
+    mealDetailsContent.parentElement.classList.remove('showRecipe');
+});
 
 //get meal list that mathces with ingredients
 function getMealList()
@@ -79,10 +83,9 @@ function mealRecipeModal(meal)
         </div>
 
         <div class="recipe-link">
-            <a href="${meal.strYoutube}" target="_blank" rel="noopener noreferrer">Watch Video</a>
+            <a href="${meal.strYoutube}" target="_blank">Watch Video</a>
         </div>
     `;
-    // console.log(html);
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
