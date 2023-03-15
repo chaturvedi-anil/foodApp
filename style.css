@@ -247,6 +247,18 @@ body
 {
     opacity: 0.8;
 }
+
+/* Not Found Meal */
+.notFound
+{
+    grid-template-columns: 1fr !important;
+    color: var(--tenne-twany);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+
 /* Media Queries */
 @media screen and (min-width: 600px){
     .meal-search-box{
